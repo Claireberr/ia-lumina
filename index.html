@@ -5,60 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lúmina – La IA explicada con luz</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-  #lumo-video-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 180px;
-    z-index: 1000;
-    text-align: center;
-  }
-
-  #lumo-video-container video {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  }
-
-  .lumo-bubble {
-    background-color: #ffffff;
-    color: #333;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-    margin-top: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    animation: fadeInUp 1s ease-out;
-  }
-
-  .lumo-button {
-    margin-top: 10px;
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .lumo-button:hover {
-    background-color: #1e40af;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
+    #lumo-video-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 180px;
+      z-index: 1000;
+      text-align: center;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+
+    #lumo-video-container video {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-  }
-</style>
+
+    .lumo-bubble {
+      background-color: #ffffff;
+      color: #333;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-top: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .lumo-button {
+      margin-top: 10px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .lumo-button:hover {
+      background-color: #1e40af;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
@@ -136,68 +137,4 @@
       <h2 class="text-3xl font-bold mb-8 text-center">Preguntas frecuentes</h2>
       <div class="space-y-6">
         <div>
-          <h3 class="text-xl font-semibold">¿Necesito saber de tecnología para usar Lúmina?</h3>
-          <p class="text-gray-700">No. Lúmina está diseñada para personas sin conocimientos técnicos. Todo se explica de forma visual, paso a paso y con lenguaje claro.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">¿Es gratis?</h3>
-          <p class="text-gray-700">El acceso inicial a las simulaciones básicas es gratuito. Más adelante podrás desbloquear contenidos premium si lo deseas.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">¿Qué tipo de ejemplos ofrece?</h3>
-          <p class="text-gray-700">Desde cómo una IA detecta spam hasta cómo recomienda productos. Todo con datos simulados para que aprendas sin riesgos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonios -->
-  <section class="py-16 px-6 md:px-16 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Lo que dicen nuestros primeros usuarios</h2>
-      <div class="grid gap-8 md:grid-cols-2">
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <p class="text-gray-700 italic">“Nunca pensé que entender la inteligencia artificial fuera tan fácil. Lúmina me quitó el miedo y ahora lo explico yo a mis colegas.”</p>
-          <p class="mt-4 font-semibold">— Rosa M., 58 años</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <p class="text-gray-700 italic">“Como jefe de operaciones, necesitaba entender bien qué hace una IA antes de aplicarla. Lúmina me ayudó a verlo todo claro.”</p>
-          <p class="mt-4 font-semibold">— Carlos V., 46 años</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA final emocional -->
-  <section class="py-16 px-6 md:px-16 bg-blue-50 text-center">
-    <div class="max-w-2xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">La tecnología no tiene por qué asustarte</h2>
-      <p class="text-lg text-gray-700 mb-6">Con Lúmina, descubrirás que detrás de cada algoritmo hay lógica, no magia. Empieza hoy a entender lo que te rodea y lidera el cambio desde el conocimiento.</p>
-      <a href="#contacto" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition">Empieza ahora</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-6 text-center bg-white text-sm text-gray-500">
-    © 2025 Lúmina – La IA explicada con luz. Todos los derechos reservados.
-  </footer>
-  <!-- LUMO Mascota Video + Burbuja + Botón -->
-<div id="lumo-video-container">
-  <video autoplay muted loop playsinline>
-    <source src="https://claireberr.github.io/ia-lumina/lumo.mp4" type="video/mp4">
-    Tu navegador no soporta el video.
-  </video>
-  <div class="lumo-bubble">¡Hola, soy LUMO!</div>
-  <button class="lumo-button" onclick="window.location.href='https://claireberr.github.io/ia-lumina/chat'">Habla conmigo</button>
-</div>
-  <!-- LUMO Mascota Video + Burbuja + Botón -->
-<div id="lumo-video-container">
-  <video autoplay muted loop playsinline>
-    <source src="https://claireberr.github.io/ia-lumina/lumo.mp4" type="video/mp4">
-    Tu navegador no soporta el video.
-  </video>
-  <div class="lumo-bubble">¡Hola, soy LUMO!</div>
-  <button class="lumo-button" onclick="window.location.href='https://claireberr.github.io/ia-lumina/chat'">Habla conmigo</button>
-</div>
-</body>
-</html>
+          <h3 class="text-xl font-semibold">¿Necesito saber de
