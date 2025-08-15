@@ -127,6 +127,69 @@
   <footer class="py-6 text-center bg-white text-sm text-gray-500">
     © 2025 Lúmina – La IA explicada con luz. Todos los derechos reservados.
   </footer>
+  <!-- LUMO Mascota Video + Burbuja + Botón -->
+<div id="lumo-video-container">
+  <video autoplay muted loop playsinline>
+    <source src="https://claireberr.github.io/ia-lumina/lumo.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+  <div class="lumo-bubble">¡Hola, soy LUMO!</div>
+  <button class="lumo-button" onclick="window.location.href='https://claireberr.github.io/ia-lumina/chat'">Habla conmigo</button>
+</div>
 
+<style>
+  #lumo-video-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 180px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  #lumo-video-container video {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .lumo-bubble {
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    animation: fadeInUp 1s ease-out;
+  }
+
+  .lumo-button {
+    margin-top: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .lumo-button:hover {
+    background-color: #1e40af;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 </body>
 </html>
